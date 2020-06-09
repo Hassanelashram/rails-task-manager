@@ -1,0 +1,6 @@
+<%= form_for(@task) do |f| %>
+        <%= f.text_field :title, placeholder: 'Task title' %>
+        <%= f.text_area :details, placeholder: 'Task details' %>
+        <%= f.check_box :completed, placeholder: 'Task title' %>
+        <%= f.submit class: 'btn btn-primary w-100' %>
+      <% end %>
